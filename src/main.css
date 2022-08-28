@@ -20,14 +20,14 @@ body {
     max-width: 200px;
   }
 }
-.bg {
-  height: 100%;
+.cover {
   width: 100%;
-  position: fixed;
-  background-image: url(../assets/background-stars.svg);
+  height: 100%;
+  position: absolute;
+  background-image: url("../assets/stars-test.svg");
+  background-size: cover;
   background-repeat: repeat;
-  overflow-x: hidden;
-  animation: starsLoop 1.2s infinite;
+  animation: starsLoop 10s linear;
 }
 
 @keyframes starsEntrance {
@@ -41,11 +41,11 @@ body {
   }
 }
 @keyframes starsLoop {
-  from {
-    right: 0px;
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    right: 500px;
+  100% {
+    background-position: -1000px 50%;
   }
 }
 
