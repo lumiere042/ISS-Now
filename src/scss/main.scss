@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    // background-image: url(../assets/background-stars.svg);
+    background-color: #111111;  
+    overflow-x: hidden;
+}
+
+.earth{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and(max-width: 300px){
+    .earth-img{
+        max-width: 200px;
+    }
+}
+
+// .bg{
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+// }
+.bg{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url(../assets/background-stars.svg);
+    background-repeat: repeat;
+    overflow-x: hidden;
+    animation: starsLoop 1.2s infinite;
+}
+
+@keyframes starsEntrance {
+    
+    0% {
+        scale: 0;
+        opacity: 0.5;
+    }
+    
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes starsLoop{
+    from{
+        right:0px;
+    }
+    to{
+        right:500px;
+    }
+}

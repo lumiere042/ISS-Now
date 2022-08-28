@@ -1,3 +1,4 @@
+// Get coordinates and convert to location
 
 async function getISSLocation(){
     const res = await fetch('http://api.open-notify.org/iss-now.json');
@@ -27,3 +28,9 @@ async function getISSLocation(){
 
 getISSLocation()
 
+// let satAnimation = anime({
+//     targets: '.bg',
+//     scale: 3,
+//     duration: 5000,
+//     loop:true,
+// })
