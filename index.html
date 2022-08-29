@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <!-- 2d Earth SVG Map -->
     <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"  class="globe" preserveAspectRatio="none" viewBox="0 0 1440 560">
             <g mask="url(&quot;#SvgjsMask1002&quot;)" fill="none">
                 <rect width="1440" height="560" x="0" y="0" fill="#0e2a47"></rect>
@@ -25,11 +26,15 @@
     
     <div class="cover"></div>
     
-    
-    
-    <div class="earth"><img src="assets/earth-icon.svg" alt="" width="250px" class="earth-img"></div>
+    <div class="earth"><img src="assets/earth-icon.svg" alt="" width="450px" class="earth-img">
+        <svg class="satellite-path" width="100%" height="100%" viewbox="0 0 1920 1080">
+            <path stroke="red" fill="none" d="M 500 750 C 350 100 1850 600 1400 100 "></path>
+        </svg>
+        <div class="satellite"><img src="assets/satellite.svg" alt="" class="satellite-img" width="180px"></div>
+    </div>
 
-    <div class="satellite"><img src="assets/satellite-svgrepo-com.svg" alt="" class="satellite-img" width="180px"></div>
+    
+
 
     <script src="node_modules/animejs/lib/anime.min.js"></script>
     <script src="src/main.js"></script>
