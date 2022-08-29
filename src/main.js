@@ -28,9 +28,20 @@ async function getISSLocation(){
 
 getISSLocation()
 
-// let satAnimation = anime({
-//     targets: '.bg',
-//     scale: 3,
-//     duration: 5000,
-//     loop:true,
-// })
+// let path = anime.path('.satellite-path path');
+
+// anime({
+//   targets: '.satellite-img',
+//   translateX: path('x'),
+//   translateY: path('y'),
+//   easing: 'linear',
+//   duration: 5000,
+//   loop: true,
+
+// });
+
+anime({
+    targets: '.satellite-img',
+    rotate: '1turn',
+    duration: 10000,
+})
